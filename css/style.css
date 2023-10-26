@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,10 +11,19 @@
     --textsubtitles: 2.5rem;
     --texts: 1.5rem;
     --minitexts: 0.5rem;
-  }
+    --black: #000;
+    --white: #fff;
+
+}
 
 .navbar-expand-lg .navbar-collapse {
     display: flex;
     flex-basis: auto;
     justify-content: flex-end;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 3em;
 }
