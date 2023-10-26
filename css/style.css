@@ -3,4 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+:root {
+    --texttitles: 3rem, bold;
+    --textsubtitles: 2.5rem;
+    --texts: 1.5rem;
+    --minitexts: 0.5rem;
+  }
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-end;
 }
