@@ -11,27 +11,19 @@
     --textsubtitles: 2.5rem;
     --texts: 1.5rem;
     --minitexts: 0.5rem;
-<<<<<<< Updated upstream
     --black: #000;
     --white: #fff;
 
 }
-=======
-}
-
->>>>>>> Stashed changes
 
 .navbar-expand-lg .navbar-collapse {
     display: flex;
     flex-basis: auto;
     justify-content: flex-end;
 }
-<<<<<<< Updated upstream
 
 footer {
     background-color: var(--black);
     color: var(--white);
     font-size: 3em;
 }
-=======
->>>>>>> Stashed changes
