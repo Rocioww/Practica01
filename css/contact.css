@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+:root {
+    --texttitles: 3em;
+    --textsubtitles: 2.5rem;
+    --texts: 1.5rem;
+    --minitexts: 0.5rem;
+    --black: #000;
+    --white: #fff;
+
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-end;
+    font-size: var(--texts);
+}
+
+.navbar-brand {
+    font-size: var(--textsubtitles);
+    font-weight: 500;
+}
+
+.title-contact {
+   margin: 50px;
+}
+
+.title-contact h1 {
+    font-size: var(--texttitles);
+}
+
+.text {
+    margin: 50px;
+}
+
+form {
+    margin: 50px;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 3em;
+    
+}
+
+footer > div:last-child{
+    font-size: 600%;
+}
+
+.info {
+    font-size: 0.31em;
+}
