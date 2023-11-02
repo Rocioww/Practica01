@@ -15,15 +15,14 @@
     --white: #fff;
 
 }
-
-/* HEADER  */
-.navbar {
-    background-color: white !important;
-    padding: 1em;
+/* HEADER */
+#header {
+    background-image: url(img\Barbados_beach.jpg);
 }
 
-.navbar-brand {
-    color: var(--black);
+.navbar {
+    background-color: transparent !important;
+    padding: 1em;
 }
 
 .navbar.brand,
@@ -39,7 +38,7 @@
 
 }
 
-header>a {
+.container-fluid>a {
     color: var(--black);
 }
 
@@ -90,63 +89,105 @@ span,
 }
 
 
-header {
+.container-fluid {
     --bs-gutter-x: 0rem;
     
 }
+/* IMAGE AND TEXT  */
+.row {
+    align-items: center;
+}
 
-/* FORM  */
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
 
-.title-contact {
-    margin: 50px;
- }
- 
- .title-contact h1 {
-     font-size: var(--texttitles);
- }
- 
- hr {
-     border: 1.5px solid #000;
- }
- 
- .text {
-     margin: 50px;
- }
- 
- form {
-     margin: 50px;
-     margin-bottom: 8%;
- }
- 
- #exampleInputEmail2 {
-     height: 150px;
-     margin-bottom: 3.5%;
- }
- 
- .form-control {
-     border: 1.5px solid #000;
- }
- 
- .btn-primary {
-     --bs-btn-color: #fff;
-     --bs-btn-bg: black;
-     --bs-btn-border-color: black;
-     --bs-btn-hover-color: black;
-     --bs-btn-hover-bg: white;
-     --bs-btn-hover-border-color: black;
- }
- 
- footer {
-     background-color: var(--black);
-     color: var(--white);
-     font-size: 3em;
-     
- }
- 
- footer > div:last-child{
-     font-size: 600%;
- }
- 
- .info {
-     font-size: 0.31em;
- }
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 70%;
+}
+
+/* STAFF  */
+
+.team3 {
+
+    color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .team3 h1,
+  .team3 h2,
+  .team3 h3,
+  .team3 h4,
+  .team3 h5,
+  .team3 h6 {
+    color: #3e4555;
+  }
+  
+  .team3 .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .team3 .bg-light {
+    background-color: #f4f8fa !important;
+  }
+  
+  .team3 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+    font-size: 13px;
+  }
+  
+  .team3 ul {
+    margin-top: 30px;
+  }
+  
+  .team3 h5 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  
+  .team3 ul li a {
+    color: #8d97ad;
+    padding-right: 15px;
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+  }
+  
+  .team3 ul li a:hover {
+    -webkit-transform: translate3d(0px, -5px, 0px);
+    transform: translate3d(0px, -5px, 0px);
+      color: #316ce8;
+  }
+  
+  .team3 .title {
+    margin: 30px 0 0 0;
+  }
+  
+  .team3 .subtitle {
+    margin: 0 0 20px 0;
+    font-size: 13px;
+  }
+
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+}
+};

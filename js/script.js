@@ -1,8 +1,7 @@
-// Lista de URLs de imágenes de fondo
 const backgroundImages = [
-    'url(https://i.pinimg.com/564x/79/5b/9e/795b9e41bbbe80382c95d46d2eb7fcb8.jpg)',
-    'url(https://i.pinimg.com/564x/73/47/cb/7347cb69f5c01f449eeb07ef0bced69f.jpg)',
-    'url(https://i.pinimg.com/564x/27/6b/db/276bdbe493855dc040fd25be09c1a18f.jpg)',
+    'url(https://images.unsplash.com/photo-1627414364311-195972ffc168?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+    'url(https://images.unsplash.com/photo-1548967199-79324abbe7dc?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+    'url(https://images.unsplash.com/photo-1594384448519-1e9529be29f5?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
 ];
 
 let currentImageIndex = 0;
