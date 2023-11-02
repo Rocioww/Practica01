@@ -16,10 +16,6 @@
 
 }
 
-<<<<<<< Updated upstream:css/style.css
-#header {
-    background-image: url(img\Barbados_beach.jpg);
-=======
 .navbar {
     background-color: #fff !important;
 }
@@ -27,7 +23,6 @@
 .navbar-brand,
 .navbar-nav a {
     color: #000; /* Texto negro */
->>>>>>> Stashed changes:css/contact.css
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -42,8 +37,6 @@
     font-weight: 500;
 }
 
-<<<<<<< Updated upstream:css/style.css
-=======
 hr {
     border: 1.5px solid black;
 }
@@ -85,7 +78,6 @@ form {
     margin-bottom: 3%;
 }
 
->>>>>>> Stashed changes:css/contact.css
 footer {
     background-color: var(--black);
     color: var(--white);
