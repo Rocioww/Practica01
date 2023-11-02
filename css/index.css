@@ -17,10 +17,12 @@
 }
 
 /* HEADER */
-#header {
-    background-image: url(img\Barbados_beach.jpg);
-}
 
+header {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
 .navbar {
     background-color: transparent !important;
     padding: 1em;
