@@ -17,13 +17,13 @@
 }
 
 /* HEADER  */
-#header {
-    background-image: url(img\Barbados_beach.jpg);
+.navbar {
+    background-color: white !important;
+    padding: 1em;
 }
 
-.navbar {
-    background-color: transparent !important;
-    padding: 1em;
+.navbar-brand {
+    color: var(--black);
 }
 
 .navbar.brand,
@@ -39,7 +39,7 @@
 
 }
 
-.container-fluid>a {
+header>a {
     color: var(--black);
 }
 
@@ -90,7 +90,7 @@ span,
 }
 
 
-.container-fluid {
+header {
     --bs-gutter-x: 0rem;
     
 }

@@ -17,13 +17,13 @@
 }
 
 /* HEADER  */
-#header {
-    background-image: url(img\Barbados_beach.jpg);
+.navbar {
+    background-color: white !important;
+    padding: 1em;
 }
 
-.navbar {
-    background-color: transparent !important;
-    padding: 1em;
+.navbar-brand {
+    color: var(--black);
 }
 
 .navbar.brand,
@@ -39,7 +39,7 @@
 
 }
 
-.container-fluid>a {
+header>a {
     color: var(--black);
 }
 
@@ -90,7 +90,7 @@ span,
 }
 
 
-.container-fluid {
+header {
     --bs-gutter-x: 0rem;
     
 }
@@ -98,32 +98,55 @@ span,
 /* FORM  */
 
 .title-contact {
-   margin: 50px;
-}
-
-.title-contact h1 {
-    font-size: var(--texttitles);
-}
-
-.text {
     margin: 50px;
-}
-
-form {
-    margin: 50px;
-}
-
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    font-size: 3em;
-    
-}
-
-footer > div:last-child{
-    font-size: 600%;
-}
-
-.info {
-    font-size: 0.31em;
-}
+ }
+ 
+ .title-contact h1 {
+     font-size: var(--texttitles);
+ }
+ 
+ hr {
+     border: 1.5px solid #000;
+ }
+ 
+ .text {
+     margin: 50px;
+ }
+ 
+ form {
+     margin: 50px;
+     margin-bottom: 8%;
+ }
+ 
+ #exampleInputEmail2 {
+     height: 150px;
+     margin-bottom: 3.5%;
+ }
+ 
+ .form-control {
+     border: 1.5px solid #000;
+ }
+ 
+ .btn-primary {
+     --bs-btn-color: #fff;
+     --bs-btn-bg: black;
+     --bs-btn-border-color: black;
+     --bs-btn-hover-color: black;
+     --bs-btn-hover-bg: white;
+     --bs-btn-hover-border-color: black;
+ }
+ 
+ footer {
+     background-color: var(--black);
+     color: var(--white);
+     font-size: 3em;
+     
+ }
+ 
+ footer > div:last-child{
+     font-size: 600%;
+ }
+ 
+ .info {
+     font-size: 0.31em;
+ }
