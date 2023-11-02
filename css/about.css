@@ -15,6 +15,10 @@
     --white: #fff;
 
 }
+
+h3{
+    font-size: 2.5em;
+}
 /* HEADER */
 #header {
     background-image: url(img\Barbados_beach.jpg);
@@ -23,6 +27,7 @@
 .navbar {
     background-color: transparent !important;
     padding: 1em;
+   
 }
 
 .navbar.brand,
@@ -56,7 +61,7 @@ span,
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-brand:hover {
@@ -64,13 +69,13 @@ span,
 }
 
 
-.navbar-nav>.nav-link:hover {
+.nav-link:hover {
     display: inline-block;
     position: relative;
     color: black;
 }
 
-.navbar-nav>.nav-link:after {
+.nav-link:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -83,16 +88,19 @@ span,
     transition: transform 0.3s ease-out;
 }
 
-.navbar-nav>.nav-link:hover:after {
+.navbar-toggler:hover {
+    text-decoration: none;
+}
+.nav-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 
 .container-fluid {
     --bs-gutter-x: 0rem;
     
 }
+
 /* IMAGE AND TEXT  */
 .row {
     align-items: center;
