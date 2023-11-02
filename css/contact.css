@@ -24,12 +24,13 @@
 }
 
 .navbar {
-    background-color: #fff !important; 
+    background-color: transparent !important;
+    padding: 1em;
 }
 
-.navbar-brand,
-.navbar-nav a {
-    color: #000; /* Texto negro */
+.navbar.brand,
+.navbar-nav>a {
+    color: var(--white);
 }
 
 .navbar-brand {
