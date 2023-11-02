@@ -16,8 +16,18 @@
 
 }
 
+<<<<<<< Updated upstream:css/style.css
 #header {
     background-image: url(img\Barbados_beach.jpg);
+=======
+.navbar {
+    background-color: #fff !important;
+}
+
+.navbar-brand,
+.navbar-nav a {
+    color: #000; /* Texto negro */
+>>>>>>> Stashed changes:css/contact.css
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -32,6 +42,50 @@
     font-weight: 500;
 }
 
+<<<<<<< Updated upstream:css/style.css
+=======
+hr {
+    border: 1.5px solid black;
+}
+
+.title-contact {
+   margin: 50px;
+}
+
+.title-contact h1 {
+    font-size: var(--texttitles);
+}
+
+.text {
+    margin: 50px;
+}
+
+form {
+    margin: 50px;
+    margin-bottom: 90px;
+}
+
+
+.btn-primary {
+    --bs-btn-color: white;
+    --bs-btn-bg: black;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: black;
+}
+
+.form-control {
+    border-radius: 2rem !important;
+    border: 1.5px solid #000;
+}
+
+#exampleInputPassword1 {
+    height: 150px;
+    margin-bottom: 3%;
+}
+
+>>>>>>> Stashed changes:css/contact.css
 footer {
     background-color: var(--black);
     color: var(--white);
