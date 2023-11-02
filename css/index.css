@@ -16,15 +16,18 @@
 
 }
 
+/* HEADER */
 #header {
     background-image: url(img\Barbados_beach.jpg);
 }
+
 .navbar {
     background-color: transparent !important;
-    
+    padding: 1em;
 }
 
-.navbar.brand, .navbar-nav > a {
+.navbar.brand,
+.navbar-nav>a {
     color: var(--white);
 }
 
@@ -33,29 +36,139 @@
     flex-basis: auto;
     justify-content: flex-end;
     font-size: var(--texts);
- 
+
 }
-.container-fluid > a {
+
+.container-fluid>a {
     color: var(--white);
 }
+
 .navbar-brand {
     font-size: var(--textsubtitles);
     font-weight: 500;
-    
+
 }
+
+span,
+.navbar-toggler,
+.navbar-toggler-icon {
+    border-color: var(--white) !important;
+    color: white !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand:hover {
+    color: var(--white);
+}
+
+
+.navbar-nav>.nav-link:hover {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.navbar-nav>.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav>.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 .container-fluid {
     --bs-gutter-x: 0rem;
+    
 }
 
+/* GALLLERY */
+.img-section{
+    width:100%;
+    height:400px;
+}
+.text {
+    height: 380px;
+}
+
+/* CLIENTS  */
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+#clients {
+    padding: 60px 0;
+    
+}
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px;
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 160px;
+}
+
+#clients img {
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+/* FOOTER  */
 footer {
     background-color: var(--black);
     color: var(--white);
     font-size: 2em;
-    
+
 }
 
-footer > div:last-child{
+footer>div:last-child {
     width: 100%;
     padding: 0 !important;
 }
