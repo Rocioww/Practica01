@@ -106,9 +106,11 @@ span,
 .title-work h1 {
      font-size: var(--texttitles);
 }
- 
-hr {
-     border: 1.5px solid #000;
+
+.c-rule {
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
 }
 
 .container {
@@ -127,14 +129,6 @@ hr {
 .photo-card {
     margin-bottom: 20px;
 }
-
-.separator {
-    flex: 1;
-    border-left: 1px solid black; 
-    margin: -110% 102%;
-    height: 300%;
-}
-
 
 /* WHAT WE DO */
 
@@ -211,12 +205,33 @@ hr {
 
 /* WHO WE ARE */
 
+#about {
+    padding: 60px 0;
+}
+
 .title-about {
     margin: 50px;
 }
  
 .title-about h1 {
      font-size: var(--texttitles);
+}
+
+#carouselExampleAutoplaying {
+    margin: 0 auto;
+}
+
+/* Ajusta el ancho máximo si es necesario */
+#carouselExampleAutoplaying .carousel-inner {
+    max-width: 600px; /* Cambia el valor según tus necesidades */
+}
+
+/* Centra el carrusel verticalmente en su contenedor */
+#carouselExampleAutoplaying .carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ajusta la altura mínima según tus necesidades */
 }
 
 /* FOOTER  */
