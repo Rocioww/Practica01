@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    background-color: var(--black);
+    color: var(--white) !important;
 }
 
 :root {
@@ -16,9 +18,8 @@
 
 }
 
-h3{
-    font-size: 2.5em;
-}
+
+
 /* HEADER */
 #header {
     background-image: url(img\Barbados_beach.jpg);
@@ -32,7 +33,7 @@ h3{
 
 .navbar.brand,
 .navbar-nav>a {
-    color: var(--black);
+    color: var(--white);
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -44,7 +45,7 @@ h3{
 }
 
 .container-fluid>a {
-    color: var(--black);
+    color: var(--white);
 }
 
 .navbar-brand {
@@ -56,7 +57,7 @@ h3{
 span,
 .navbar-toggler,
 .navbar-toggler-icon {
-    border-color: var(--black) !important;
+    border-color: var(--white) !important;
     color: black !important;
 }
 
@@ -101,6 +102,22 @@ span,
     
 }
 
+/* MAIN  */
+body{
+    background-color: var(--black);
+}
+h3{
+    font-size: 2.5em;
+}
+
+.title-contact {
+    margin: 50px;
+}
+
+hr {
+    border: 1.5px solid #ffffff;
+}
+
 /* IMAGE AND TEXT  */
 .row {
     align-items: center;
@@ -131,7 +148,11 @@ span,
     width: 70%;
 }
 
+
+
 /* STAFF  */
+
+
 
 .team3 {
 
@@ -193,6 +214,15 @@ span,
     margin: 0 0 20px 0;
     font-size: 13px;
   }
+
+
+  li > a{
+    color:var(--white);
+}
+
+
+
+/* MEDIA QUERIES  */
 
 @media (min-width: 1400px){
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
