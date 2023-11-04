@@ -4,8 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    background-color: var(--black);
-    color: var(--white) !important;
+
 }
 
 :root {
@@ -21,6 +20,14 @@
 
 
 /* HEADER */
+header, body, .team3 {
+    background-color: var(--black);
+    color: var(--white) !important;
+}
+
+.team3 h1, .team3 h2, .team3 h3, .team3 h4, .team3 h5,.team3 h6,i {
+    color: var(--white) !important;
+}
 #header {
     background-image: url(img\Barbados_beach.jpg);
 }
@@ -58,22 +65,22 @@ span,
 .navbar-toggler,
 .navbar-toggler-icon {
     border-color: var(--white) !important;
-    color: black !important;
+    color: white !important;
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-brand:hover {
-    color: var(--black);
+    color: var(--white);
 }
 
 
 .nav-link:hover {
     display: inline-block;
     position: relative;
-    color: black;
+    color: var(--white);
 }
 
 .nav-link:after {
@@ -105,6 +112,20 @@ span,
 /* MAIN  */
 body{
     background-color: var(--black);
+}
+.title-about {
+    margin: 50px;
+    color: var(--white);
+ }
+ 
+ .title-about h1 {
+     font-size: var(--texttitles);
+ }
+ 
+ .c-rule {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
 }
 h3{
     font-size: 2.5em;
@@ -220,6 +241,54 @@ hr {
     color:var(--white);
 }
 
+/* FOOTER  */
+footer {
+    font-size: 2em;
+}
+
+footer>div:last-child {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.footer {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.footernav {
+    flex-direction: column;
+}
+
+#footernav > div:first-child > div > p {
+    min-width: 30em;
+}
+
+#footerresp > p > a{
+    font-size: 1em !important;
+}
+
+
+
+.info {
+    font-size: 0.4em;
+    flex-direction: column !important;
+}
+
+#terms > div > p {
+    font-size: 0.7em;
+}
+
+.footer > .container{
+margin: 0;
+  
+}
+
+#footerimg > img{
+    width: 100%;
+}
+
+
 
 
 /* MEDIA QUERIES  */
@@ -229,3 +298,9 @@ hr {
     max-width: 1320px;
 }
 };
+
+@media (max-width: 750px){
+    .footer {
+    justify-content: space-around;
+}
+}

@@ -138,17 +138,53 @@ header {
      --bs-btn-hover-border-color: black;
  }
  
- footer {
-     background-color: var(--black);
-     color: var(--white);
-     font-size: 3em;
-     
- }
- 
- footer > div:last-child{
-     font-size: 600%;
- }
- 
- .info {
-     font-size: 0.31em;
- }
+/* FOOTER  */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2em;
+
+}
+
+footer>div:last-child {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.footernav {
+    flex-direction: column;
+}
+
+#footernav > div:first-child > div > p {
+    min-width: 30em;
+}
+
+#footerresp > p > a{
+    font-size: 1em !important;
+}
+
+
+
+.info {
+    font-size: 0.4em;
+    flex-direction: column !important;
+}
+
+#terms > div > p {
+    font-size: 0.7em;
+}
+
+.footer > .container{
+margin: 0;
+  
+}
+
+#footerimg > img{
+    width: 100%;
+}
+
+@media (max-width: 750px){
+    .footer {
+    justify-content: space-around;
+}
+}
