@@ -113,9 +113,10 @@ span,
     background-color: var(--black);
 }
 
-.container {
+.title-work > .container {
     max-width: 95%;
 }
+
 
 .row {
     display: flex;
@@ -176,9 +177,7 @@ span,
     padding: 60px 0;
     
 }
-#clients .clients-wrap {
 
-}
 
 #clients .client-logo {
     padding: 64px;
@@ -247,6 +246,40 @@ footer>div:last-child {
     padding: 0 !important;
 }
 
+.footernav {
+    flex-direction: column;
+}
+
+#footernav > div:first-child > div > p {
+    min-width: 30em;
+}
+
+#footerresp > p > a{
+    font-size: 1em !important;
+}
+
+
+
 .info {
     font-size: 0.4em;
+    flex-direction: column !important;
+}
+
+#terms > div > p {
+    font-size: 0.7em;
+}
+
+.footer > .container{
+margin: 0;
+  
+}
+
+#footerimg > img{
+    width: 100%;
+}
+
+@media (max-width: 750px){
+    .footer {
+    justify-content: space-around;
+}
 }
