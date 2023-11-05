@@ -18,7 +18,7 @@
 }
 
 h1{
-    margin-top:1em;
+    margin-top:2em;
 }
 
 .title-services {
@@ -36,6 +36,9 @@ h1{
    background-color: var(--black);
 }
 
+.right{
+  text-align: right;
+}
 /* HEADER  */
 .header {
     background-color:rgba(255, 255, 255, 0.6);
@@ -74,7 +77,7 @@ h1{
     display: block;
     float: left;
     font-size: 2em;
-    padding: 10px 20px;
+    padding: 14px 20px;
     text-decoration: none;
   }
   
@@ -90,6 +93,10 @@ h1{
 
   
   /* menu icon */
+
+  label{
+    margin: 0 !important;
+  }
   
   .header .menu-icon {
     cursor: pointer;
@@ -174,3 +181,95 @@ h1{
       display: none;
     }
   }
+
+
+/* SERVICES  */
+
+#servicespad {
+  padding: 2em;
+}
+.services1 {
+  padding: 0.5em;
+}
+
+.figure {
+  position: relative;
+  max-width: 100%;
+}
+.figure img.Sirv.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover img.Sirv.image-hover {
+  opacity: 1;
+}
+
+
+
+/* FOOTER  */
+footer {
+  background-color: var(--black);
+  color: var(--white) !important;
+  font-size: 2em;
+
+}
+
+footer>div:last-child {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.footernav {
+  flex-direction: column;
+}
+
+#footernav > div:first-child > div > p {
+  min-width: 30em;
+}
+
+#footerresp > p > a{
+  font-size: 1em !important;
+}
+
+
+
+.info {
+  font-size: 0.4em;
+  flex-direction: column !important;
+}
+
+#terms > div > p {
+  font-size: 0.7em;
+}
+
+.footer > .container{
+margin: 0;
+
+}
+#footernav > div:first-child{
+  margin-left: 0.5em;
+}
+
+#footerimg > img{
+  width: 100%;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 750px){
+  .footer {
+  justify-content: space-around;
+  
+}
+
+}
+
