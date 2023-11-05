@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: black;
 }
 
 :root {
@@ -16,89 +17,152 @@
 
 }
 
+h1{
+    margin-top:1em;
+}
+
 /* HEADER  */
-.navbar {
-    background-color: white !important;
-    padding: 1em;
-}
-
-.navbar-brand {
-    color: var(--black);
-}
-
-.navbar.brand,
-.navbar-nav>a {
-    color: var(--black);
-}
-
-.navbar-expand-lg .navbar-collapse {
-    display: flex;
-    flex-basis: auto;
-    justify-content: flex-end;
-    font-size: var(--texts);
-
-}
-
-header>a {
-    color: var(--black);
-}
-
-.navbar-brand {
-    font-size: var(--textsubtitles);
-    font-weight: 500;
-
-}
-
-span,
-.navbar-toggler,
-.navbar-toggler-icon {
-    border-color: var(--black) !important;
-    color: black !important;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-brand:hover {
-    color: var(--black);
-}
-
-
-.navbar-nav>.nav-link:hover {
-    display: inline-block;
-    position: relative;
-    color: black;
-}
-
-.navbar-nav>.nav-link:after {
-    content: '';
-    position: absolute;
+.header {
+    background-color:rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100%;
-    transform: scaleX(0);
+    z-index: 3;
+    position: fixed;
+    color: var(--black);
+
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 19px 19px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 33px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
     height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 280px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 18px;
+    }
 
-.navbar-nav>.nav-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-header {
-    --bs-gutter-x: 0rem;
-    
-}
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
 
 /* FORM  */
 
 .title-contact {
     margin: 50px;
+    margin-top: 0px;
  }
  
  .title-contact h1 {
@@ -113,6 +177,7 @@ header {
  
  .text {
      margin: 50px;
+   
  }
  
  form {
