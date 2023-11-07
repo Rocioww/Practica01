@@ -24,14 +24,14 @@
 
   
 .header {
-    background-color:rgba(255, 255, 255, 0.6);
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    width: 100%;
-    z-index: 3;
-    position: fixed;
-    color: var(--black);
-
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  color: var(--black);
+  background-color: transparent;
+  transition: background-color 0.3s; 
   }
+
   
   .header ul {
     margin: 0;
@@ -62,6 +62,11 @@
     text-decoration: none;
   }
   
+  .header.header-scroll {
+    background-color: white;
+  }
+
+
   /* menu */
 
   

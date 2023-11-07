@@ -14,3 +14,16 @@ function changeBackgroundImage() {
 
 // Cambia la imagen de fondo cada 5 segundos (5000 milisegundos)
 setInterval(changeBackgroundImage, 10000);
+
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const scrollThreshold = 200;
+
+    if (scrollPosition > scrollThreshold) {
+        header.classList.add('header-scroll');
+    } else {
+        header.classList.remove('header-scroll');
+    }
+});
