@@ -200,6 +200,15 @@
     margin-bottom: 20px;
 }
 
+.photo-card img {
+  border-radius: 20px;
+}
+
+.workgallery {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
 /* WHAT WE DO */
 
 .title-services {
@@ -274,33 +283,56 @@
 /* WHO WE ARE */
 
 #about {
-    padding: 60px 0;
-}
-
-.title-about {
-    margin: 50px;
+    padding: 50px;
 }
  
 .title-about h1 {
      font-size: var(--texttitles);
 }
 
-#carouselExampleAutoplaying {
-    margin: 0 auto;
+.service-content {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+  align-items: flex-start;
 }
 
-/* Ajusta el ancho máximo si es necesario */
-#carouselExampleAutoplaying .carousel-inner {
-    max-width: 600px; /* Cambia el valor según tus necesidades */
+.employee {
+  border: 2px solid black;
+  background: transparent;
+  padding: 25px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.35s;
+  width: 40%;
+  position: relative; 
 }
 
-/* Centra el carrusel verticalmente en su contenedor */
-#carouselExampleAutoplaying .carousel-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ajusta la altura mínima según tus necesidades */
+.employee img {
+  margin-bottom: 20px;
+  width: 100%;
+  filter: grayscale(100%); 
+  transition: filter 0.35s; 
 }
+
+.employee h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+.employee:hover {
+  transform: scale(1.06);
+}
+
+.employee:hover img {
+  filter: grayscale(0%);
+}
+
 
 /* FOOTER  */
 footer {
