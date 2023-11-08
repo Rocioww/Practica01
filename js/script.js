@@ -27,3 +27,16 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header-scroll');
     }
 });
+
+const photoCards = document.querySelectorAll(".photo-card");
+
+photoCards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      card.querySelector(".img-fluid").style.opacity = 0;
+    });
+  
+    card.addEventListener("mouseleave", () => {
+      card.querySelector(".img-fluid").style.opacity = 1;
+    });
+  });
+
