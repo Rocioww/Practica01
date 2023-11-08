@@ -19,7 +19,7 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const scrollThreshold = 200;
+    const scrollThreshold = 400;
 
     if (scrollPosition > scrollThreshold) {
         header.classList.add('header-scroll');
@@ -27,16 +27,3 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header-scroll');
     }
 });
-
-const photoCards = document.querySelectorAll(".photo-card");
-
-photoCards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      card.querySelector(".img-fluid").style.opacity = 0;
-    });
-  
-    card.addEventListener("mouseleave", () => {
-      card.querySelector(".img-fluid").style.opacity = 1;
-    });
-  });
-
