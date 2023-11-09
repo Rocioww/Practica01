@@ -177,14 +177,22 @@ h1{
 }
  
  .text {
-     margin: 50px;
-   
+     margin: 30px 50px;
  }
  
  form {
      margin: 50px;
      margin-bottom: 8%;
+     border: 2px solid black;
+     background: transparent;
+     padding: 35px 35px;
+     border-radius: 30px;
+     margin-bottom: 2%;
  }
+
+ .mb-3 {
+  margin: 1rem;
+  }
  
  #exampleInputEmail2 {
      height: 150px;
@@ -202,6 +210,7 @@ h1{
      --bs-btn-hover-color: black;
      --bs-btn-hover-bg: white;
      --bs-btn-hover-border-color: black;
+     margin: 1rem;
  }
 
  

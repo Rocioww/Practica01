@@ -211,6 +211,15 @@ h1{
   opacity: 1;
 }
 
+.services1 {
+  border: 2px solid black;
+  background: transparent;
+  padding: 25px 25px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+
 
 
 /* FOOTER  */

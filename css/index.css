@@ -198,10 +198,10 @@
 
 .photo-card {
     margin-bottom: 20px;
-}
-
-.photo-card img {
-  border-radius: 20px;
+    border: 2px solid black;
+    background: transparent;
+    padding: 25px 25px;
+    border-radius: 10px;
 }
 
 .workgallery {
@@ -209,6 +209,17 @@
   width: 50%;
 }
 
+.workgallery {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.caption > h2 {
+  font-size: var(--textsubtitles);
+  margin-top: 10px;
+}
 
 /* WHAT WE DO */
 
@@ -218,6 +229,27 @@
  
 .title-services h1 {
      font-size: var(--texttitles);
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin: 5% 7%;
+}
+
+.service-description {
+  width: 48%;
+}
+
+.btn-primary {
+  --bs-btn-color: black;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: black;
+  border-radius: 10%;
 }
 
 /* CLIENTS  */
@@ -250,11 +282,6 @@
 .container-clients {
     margin: 0 5%;
     margin-bottom: 30px;
-}
-
-#clients {
-    padding: 60px 0;
-    
 }
 
 

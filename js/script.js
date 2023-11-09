@@ -27,3 +27,17 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header-scroll');
     }
 });
+
+
+function changeImage(element) {
+    var originalImage = element.querySelector('img');
+    var altImage = element.getAttribute('data-alt-image');
+    element.setAttribute('data-original-image', originalImage.src);
+    originalImage.src = altImage;
+  }
+
+  function resetImage(element) {
+    var originalImage = element.querySelector('img');
+    var originalImageUrl = element.getAttribute('data-original-image');
+    originalImage.src = originalImageUrl;
+  }
