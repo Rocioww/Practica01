@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    color: black;
+ 
 }
 
 :root {
@@ -215,9 +215,18 @@ h1{
   padding: 2em 4em;
   padding-top: 0;
 }
-.services1 {
+.services1, .services2 {
   padding: 0.5em;
   min-height: 20em;
+}
+
+.services2{
+  background-color: var(--black);
+  color: var(--white) !important;
+  border: 2px solid white;
+  padding: 25px 25px;
+  border-radius: 10px;
+  margin-bottom: 2%;
 }
 
 .figure {
@@ -238,7 +247,7 @@ h1{
   opacity: 1;
 }
 
-.services1 {
+.services1{
   border: 2px solid black;
   background: transparent;
   padding: 25px 25px;
