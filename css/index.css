@@ -164,6 +164,10 @@
     }
   }
   
+/* BODY  */
+body, .list-inline > li > a, .subtitle {
+  color: var(--black) !important;
+}
 
 
 /* GALLLERY */

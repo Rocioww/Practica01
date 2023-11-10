@@ -24,14 +24,32 @@ body{
 h1{
     margin-top:2em;
 }
+.title-service, .title-service2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  
+}
 
+.title-service h1, .title-service2 h1{
+  font-size: 3.5em !important;
+}
+.title-service p {
+  padding-right: 6em;
+  padding-bottom: 2em;
+}
 .title-services {
     margin: 50px;
     color: var(--black);
  }
 
  .title-services h1 {
-    font-size: var(--texttitles);
+    font-size: 3em !important;
+}
+
+.title-service2 p {
+  padding-left: 6em;
+  padding-bottom: 2em;
 }
 
 .c-rule {
@@ -194,10 +212,12 @@ h1{
 /* SERVICES  */
 
 #servicespad {
-  padding: 2em;
+  padding: 2em 4em;
+  padding-top: 0;
 }
 .services1 {
   padding: 0.5em;
+  min-height: 20em;
 }
 
 .figure {
