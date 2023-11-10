@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
-    color: black;
 }
 
 :root {
@@ -139,25 +138,7 @@ h1{
     top: 0;
   }
   
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 18px;
-    }
 
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-  }
 
 /* FORM  */
 
@@ -215,52 +196,94 @@ h1{
 
  
 /* FOOTER  */
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    font-size: 2em;
 
+footer {
+  font-size: 2em;
+  color: var(--white) !important;
+  width: 100%;
+  background-color: var(--black);
 }
 
 footer>div:last-child {
-    width: 100%;
-    padding: 0 !important;
+  width: 100%;
+  padding: 0 !important;
 }
+
 
 .footernav {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-#footernav > div:first-child > div > p {
-    min-width: 30em;
+
+#footerresp > div > p > a{
+  font-size: 1em !important;
 }
 
-#footerresp > p > a{
-    font-size: 1em !important;
+.footnav1 > p{
+margin-right: 1em;
 }
-
+.footnav2 > p{
+margin-left: 1em;
+}
 
 
 .info {
-    font-size: 0.4em;
-    flex-direction: column !important;
+  font-size: 0.4em;
+  flex-direction: column !important;
+
+  
+}
+
+.info > div > div:first-child >p {
+min-width: 22em;
+}
+#terms {
+flex-wrap: nowrap;
 }
 
 #terms > div > p {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 .footer > .container{
 margin: 0;
-  
+
 }
 
 #footerimg > img{
-    width: 100%;
+  width: 100%;
 }
 
-@media (max-width: 750px){
-    .footer {
-    justify-content: space-around;
-}
-}
+/* MEDIA QUERIES  */
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header {
+      height: 9.6%;
+    }
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 18px;
+    }
+
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+
+  
+  @media (max-width: 750px){
+    
+  
+      .footer {
+      justify-content: space-around;
+  }
+  }
