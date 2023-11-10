@@ -18,7 +18,7 @@
 
 /* HEADER */
 #indexheader {
-    background-image: url('https://images.unsplash.com/photo-1581898975010-1446955616ba?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); height: 100vh;
+    background-image: url('img/header_1.png'); height: 100vh;
 }
 
 
@@ -244,6 +244,10 @@ body, .list-inline > li > a, .subtitle {
 
 .service-description {
   width: 48%;
+}
+
+.service-description > p {
+  font-size: 1.2rem;
 }
 
 .btn-primary {
