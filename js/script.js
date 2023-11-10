@@ -13,7 +13,7 @@ function changeBackgroundImage() {
 }
 
 // Cambia la imagen de fondo cada 5 segundos (5000 milisegundos)
-setInterval(changeBackgroundImage, 10000);
+setInterval(changeBackgroundImage, 5000);
 
 const header = document.querySelector('.header');
 

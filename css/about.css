@@ -202,6 +202,7 @@ hr {
 .how-section1{
     margin-top:-15%;
     padding: 10%;
+    padding-bottom: 5%;
 }
 .how-section1 h4{
 
@@ -220,8 +221,9 @@ hr {
 {
     text-align: center;
 }
-.how-img img{
-    width: 70%;
+.how-img > img{
+    
+    padding-left: 2em;
 }
 
 
