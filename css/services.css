@@ -185,28 +185,6 @@ h1{
     top: 0;
   }
   
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .header {
-      height: 9.6%;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 18px;
-    }
-
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-  }
 
 
 /* SERVICES  */
@@ -256,14 +234,14 @@ h1{
 }
 
 
-
-
 /* FOOTER  */
-footer {
-  background-color: var(--black);
-  color: var(--white) !important;
-  font-size: 2em;
 
+footer {
+  font-size: 2.2em;
+  color: var(--white) !important;
+  width: 100%;
+  background-color: var(--black);
+  text-decoration: none;
 }
 
 footer>div:last-child {
@@ -271,23 +249,40 @@ footer>div:last-child {
   padding: 0 !important;
 }
 
+
 .footernav {
   flex-direction: column;
 }
 
-#footernav > div:first-child > div > p {
-  min-width: 30em;
-}
 
-#footerresp > p > a{
+#footerresp > div > p > a{
   font-size: 1em !important;
 }
 
+.footnav1 > p{
+margin-right: 1em;
+}
+.footnav2 > p{
+margin-left: 1em;
+}
 
 
 .info {
   font-size: 0.4em;
   flex-direction: column !important;
+
+  
+}
+
+.info > div > div:first-child >p {
+min-width: 22em;
+}
+#terms {
+flex-wrap: nowrap;
+}
+
+#terms > div  {
+ padding-left: 1.1em;
 }
 
 #terms > div > p {
@@ -298,24 +293,57 @@ footer>div:last-child {
 margin: 0;
 
 }
-#footernav > div:first-child{
-  margin-left: 0.5em;
-}
 
 #footerimg > img{
   width: 100%;
 }
 
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+.nav-link:hover {
+  text-decoration: underline !important;
+  color: var(--white);
 }
 
-@media (max-width: 750px){
-  .footer {
-  justify-content: space-around;
+/* MEDIA QUERIES  */
+  /* 48em = 768px */
   
-}
+  @media (min-width: 48em) {
+    .header {
+      height: 9.6%;
+    }
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 18px;
+    }
 
-}
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+
+  
+  @media (max-width: 750px){
+    #terms > div  {
+      padding-left: 0;
+     }
+
+      .footer {
+      justify-content: space-around;
+  }
+  }
+
+  @media (max-width: 900px){
+
+  .services1, .services2{
+    flex-direction: column !important;
+  }
+
+  }
 
