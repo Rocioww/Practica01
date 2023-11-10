@@ -542,20 +542,6 @@ margin: 0;
   #indexheader {
     height: 60vh;
   }
-
-  .row > * {
-    width: 90%;
-    
-  }
-
-  .row {
-    --bs-gutter-x: 0rem;
-  }
-
-  .d-flex.row.align-items-center {
-    flex-direction: column
-  }
-  
 }
 
 
