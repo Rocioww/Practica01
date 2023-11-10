@@ -382,6 +382,30 @@ margin: 0;
     width: 100%;
 }
 
+@media screen and (max-width: 1000px){
+
+  .d-flex.row.align-items-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.row > * {
+  width: 90%;
+  
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.text > h1:first-child {
+  margin-top: 2%;
+}
+
+} 
+  
+
+
 @media (max-width: 750px){
     .footer {
     justify-content: space-around;

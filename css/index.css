@@ -16,10 +16,14 @@
 
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* HEADER */
 #indexheader {
-    background-image: url('img/header_1.png'); height: 100vh;
-}
+    background-image: url('https://ucarecdn.com/07bfde48-2ec6-42fe-aaf9-95b993201132/'); height: 100vh;
+  }
 
 
   
@@ -490,10 +494,132 @@ margin: 0;
     width: 100%;
 }
 
+@media screen and (max-width: 1300px) {
+  
+  #indexheader {
+    height: 84vh;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+
+  #indexheader {
+    height: 79vh;
+}
+
+  .service-content {
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.employee img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+  
+  #indexheader {
+    height: 72vh;
+}
+
+}
+
+@media screen and (max-width: 1050px) {
+  
+  #indexheader {
+    height: 68vh;
+}
+
+}
+
+@media screen and (max-width: 1015px) {
+  
+  #indexheader {
+    height: 60vh;
+  }
+
+  .row > * {
+    width: 90%;
+    
+  }
+
+  .row {
+    --bs-gutter-x: 0rem;
+  }
+
+  .d-flex.row.align-items-center {
+    flex-direction: column
+  }
+  
+}
+
+
+@media screen and (max-width: 900px) {
+  
+  #indexheader {
+    height: 52vh;
+}
+
+#clients .client-logo {
+  padding: 27px;
+}
+
+.service-description > p {
+  font-size: 1rem;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.service-description > h1 {
+    font-size: 2rem;
+}
+
+
+}
+
 @media (max-width: 750px){
     .footer {
     justify-content: space-around;
     
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0.5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5em 0;
+  }
+
+  main {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  main {
+    width: 70%;
+    font-size: 18px;
+  }
 }
 
 }
