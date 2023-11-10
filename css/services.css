@@ -241,6 +241,7 @@ footer {
   color: var(--white) !important;
   width: 100%;
   background-color: var(--black);
+  text-decoration: none;
 }
 
 footer>div:last-child {
@@ -297,6 +298,11 @@ margin: 0;
   width: 100%;
 }
 
+.nav-link:hover {
+  text-decoration: underline !important;
+  color: var(--white);
+}
+
 /* MEDIA QUERIES  */
   /* 48em = 768px */
   
@@ -327,9 +333,17 @@ margin: 0;
     #terms > div  {
       padding-left: 0;
      }
-  
+
       .footer {
       justify-content: space-around;
   }
+  }
+
+  @media (max-width: 900px){
+
+  .services1, .services2{
+    flex-direction: column !important;
+  }
+
   }
 
