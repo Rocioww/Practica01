@@ -346,6 +346,8 @@ body, .list-inline > li > a, .subtitle {
   filter: grayscale(0%);
 }
 
+/* BUTTON  */
+
 button {
   font-family: inherit;
   font-size: 100%;
