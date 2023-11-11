@@ -14,6 +14,7 @@
     --minitexts: 0.5rem;
     --black: #000;
     --white: #fff;
+    --green: #d1f03f;
 
 }
 
@@ -313,6 +314,15 @@ footer>div:last-child {
 .footnav1 > p{
   margin-right: 1em;
 }
+
+.footnav1 > p >a:hover, .footnav2 >p> a:hover, 
+.info > div > div > p > a:hover, #terms > div >p:hover{
+  color: #aacf02 !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  }
+
+
 .footnav2 > p{
   margin-left: 1em;
 }
