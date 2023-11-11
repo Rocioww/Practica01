@@ -462,7 +462,7 @@ footer>div:last-child {
 margin-right: 1em;
 }
 
-#footernav > .footnav1 > p >a:hover, .footnav2 >p> a:hover, 
+.footnav1 > p >a:hover, .footnav2 >p> a:hover, 
 .info > div > div > p > a:hover, #terms > div >p:hover{
   color: var(--green) !important;
   cursor: pointer;
