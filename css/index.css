@@ -14,7 +14,16 @@
     --black: #000;
     --white: #fff;
     --green: #d1f03f;
-
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-ring-offset-shadow: 0 0 rgba(0, 0, 0, 0);
+    --tw-ring-shadow: 0 0 rgba(0, 0, 0, 0);
+    --tw-shadow: 0 0 rgba(0, 0, 0, 0);
 }
 
 body {

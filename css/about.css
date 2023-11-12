@@ -360,11 +360,7 @@ margin: 0;
 
 /* MEDIA QUERIES  */
 
-@media (min-width: 1400px){
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1320px;
-}
-};
+
 
 @media (max-width: 750px){
 
@@ -372,3 +368,36 @@ margin: 0;
     justify-content: space-around;
 }
 }
+
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1320px;
+  }
+  };
+
+@media (max-width: 1000px){
+
+  .respcont {
+    flex-direction: column;
+    text-align: center;
+ 
+}
+
+  .profileinfo {
+    text-align: left;
+    padding: 3.8em;
+  }
+}
+
+
+
+  @media (max-width: 770px){
+
+    .profileinfo {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+    
+  }
+  
