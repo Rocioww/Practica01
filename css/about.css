@@ -236,7 +236,9 @@ hr {
 
 /* STAFF  */
 
-  
+  .startinfo{
+    padding-right: 16em;
+  }
   .team3 .font-weight-medium {
     font-weight: 500;
   }
@@ -377,6 +379,8 @@ margin: 0;
 
 @media (max-width: 1000px){
 
+
+
   .respcont {
     flex-direction: column;
     text-align: center;
@@ -385,19 +389,46 @@ margin: 0;
 
   .profileinfo {
     text-align: left;
-    padding: 3.8em;
+    padding: 0em 3.8em 0em 3.8em;
   }
 }
 
 
 
-  @media (max-width: 770px){
+
+  
+  @media only screen and (max-width: 1000px){
+    .startinfo {
+      margin-right: 0;
+      padding-right: 0;
+      width: 80%;
+      text-align: left;
+      padding: 0em 5em 0em 5em;
+    }
+
+    .respcont {
+      flex-direction: column;
+      text-align: center;}
+
+      .profileinfo {
+        text-align: left;
+        padding: 0em 3.8em 0em 3.8em;
+      }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .startinfo {
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 770px){
 
     .profileinfo {
       text-align: left;
-      padding: 0;
-      margin: 0;
+      padding: 0em 0em 0em 0em;
+      margin: 0em;
     }
     
   }
-  
