@@ -452,3 +452,16 @@ footer>div:last-child {
     max-width: 90% !important;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  .row>* {
+    width: 100%;
+  }
+
+  .form-container {
+    margin: 0px;
+}
+
+}
+

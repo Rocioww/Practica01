@@ -32,7 +32,8 @@ body {
 
 /* HEADER */
 #indexheader {
-    background-image: url('https://ucarecdn.com/07bfde48-2ec6-42fe-aaf9-95b993201132/'); height: 100vh;
+  background-image: url(../img/header5.png);
+  height: 100vh;
   }
 
 
@@ -614,11 +615,44 @@ margin: 0;
 
 }
 
+@media screen and (max-width: 780px){
+
+  #indexheader {
+    height: 50vh;
+}
+}
+
+@media screen and (max-width: 768px){
+
+  #clients img {
+    max-width: 40%;
+}
+
+}
+
+
+
 @media (max-width: 750px){
     .footer {
     justify-content: space-around;
     
 }}
+
+@media screen and (max-width: 725px){
+
+  #indexheader {
+    height: 48vh;
+}
+
+}
+
+@media screen and (max-width: 650px){
+
+  #clients img {
+    max-width: 50%;
+}
+
+}
 
 @media only screen and (max-width: 600px) {
   header {
@@ -638,6 +672,70 @@ margin: 0;
     width: 90%;
     font-size: 16px;
   }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  .service-description > p {
+    font-size: 0.9rem;
+  }
+
+  .service-description > h1 {
+    font-size: 1.5rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 580px){
+
+  #clients img {
+    max-width: 60%;
+}
+
+.employee {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 550px){
+
+  .workgallery {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  #indexheader {
+    height: 40vh;
+  }
+
+}
+
+
+@media screen and (max-width: 450px){
+
+  #clients img {
+    max-width: 80%;
+}
+
+}
+
+@media screen and (max-width: 500px){
+
+  #indexheader {
+    height: 35vh;
+  }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
@@ -646,5 +744,4 @@ margin: 0;
     font-size: 18px;
   }
 }
-
 

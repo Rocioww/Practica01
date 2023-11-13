@@ -469,3 +469,19 @@ padding: 4em;
 
   }
 
+  @media (max-width: 550px) {
+
+      .title-service h1, .title-service2 h1 {
+    font-size: 2em !important;
+  }
+
+  .title-service p {
+    padding-right: 0em;
+  }
+
+  .title-service2 p {
+    padding-left: 0em;
+  }
+
+  }
+

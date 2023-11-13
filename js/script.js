@@ -1,6 +1,6 @@
 const backgroundImages = [
     { url: 'img/header_1.png', size: 'cover' },
-    { url: 'img/header_2.png', size: 'cover' },
+    { url: 'img/headder_2.png', size: 'cover' },
     { url: 'img/header_4.png', size: 'cover' },
 ];
 
