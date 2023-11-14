@@ -25,7 +25,7 @@ const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const scrollThreshold = 400;
+    const scrollThreshold = 100;
 
     if (scrollPosition > scrollThreshold) {
         header.classList.add('header-scroll');
